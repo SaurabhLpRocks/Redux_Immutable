@@ -1,3 +1,7 @@
 <h1>
-  {{title}}
+    {{title}}
 </h1>
+<app-change-detection [testObj]="testObj" [testVar]="testVar"></app-change-detection>
+<button (click)="changeString()">change  strig</button>
+<button (click)="changeName()">change  nane</button>
+<button (click)="changeObg()">change  obj</button>
