@@ -33,5 +33,5 @@ To get more help on the `angular-cli` use `ng --help` or go check out the [Angul
 
 # Rhushikesh Doc
 ## Install Redux and immutablejs
-npm  install redux __
-npm  install immutable __
+npm  install redux  
+npm  install immutable  
