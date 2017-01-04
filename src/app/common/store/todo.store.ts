@@ -14,3 +14,33 @@ export class TodoStore {
         this.store.dispatch(action);
     }
 }
+
+/*import { Map, List } from 'immutable';
+import { createStore } from 'redux';
+import { GuideInfoAction, EntitiesAction } from './actions';
+import { guideReducer } from './reducer';
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class GuideStore {
+    private store = createStore(guideReducer);
+
+    get guide(): any {
+        let state = this.store.getState();
+        return {
+            guideInfo: state.guideInfo.toJS(),
+            entities: state.entities.toJS(),
+            steps: state.steps,
+            entityMap: state.entityMap,
+            stepOptions: state.stepOptions
+        };
+    }
+    public getStore(): any {
+        return this.store;
+    }
+
+    public dispatch(action: GuideInfoAction|EntitiesAction) {
+        this.store.dispatch(action);
+    }
+}*/
+
