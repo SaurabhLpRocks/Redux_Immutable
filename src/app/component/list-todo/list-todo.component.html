@@ -5,7 +5,10 @@
             <button class="remove-item btn btn-default btn-xs pull-right" (click)="removeTodo(todo)"><span class="glyphicon glyphicon-remove"></span></button>
         </div>
     </li>
+    <li *ngIf="!todos.length">
+        <h3 class="text-center">Great <i class="glyphicon glyphicon-thumbs-up"></i> No Todo</h3>
+    </li>
 </ul>
 <div class="todo-footer">
-    <strong><span class="count-todos"></span></strong> Items Left
+    <strong><span class="count-todos">{{todos.length}}</span></strong> Items
 </div>
