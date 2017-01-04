@@ -1,7 +1,7 @@
 import { List } from 'immutable';
 import { TodoModel, ITodoAction } from '../model/todo.model';
 
-export const todoReducer = (state: List<TodoModel>, action: ITodoAction) => {
+export const todoReducer = (state: List<TodoModel> = List<TodoModel>(), action: ITodoAction) => {
     switch (action.type) {
         case 'ADD_TODO':
             return state.push(action.todo);

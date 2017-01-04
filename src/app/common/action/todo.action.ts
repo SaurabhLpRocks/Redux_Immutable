@@ -1,7 +1,4 @@
 import { TodoModel, ITodoAction } from '../model/todo.model';
-
-
-
 export function addTodo(todo: TodoModel): ITodoAction {
     return {
         type: 'ADD_TODO',

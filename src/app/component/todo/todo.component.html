@@ -1,3 +1,17 @@
-<p>
-  todo works!
-</p>
+<div class="col-md-offset-3 col-md-6">
+    <div class="todolist not-done">
+        <h1>Todos</h1>
+        <input type="text" class="form-control add-todo" [(ngModel)]="todo.text" placeholder="Add todo">
+        <br>
+        <button class="btn btn-success btn-block" (click)="addTodo()">Add</button>
+        <hr>
+        <app-list-todo [todos]="this.store.todos"></app-list-todo>
+    </div>
+</div>
+<div class="col-md-offset-3 col-md-6">
+    <div class="todolist not-done">
+        <h1>Completed Todos</h1>
+        <hr>
+        <app-list-todo [todos]="this.store.todos"></app-list-todo>
+    </div>
+</div>

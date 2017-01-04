@@ -9,19 +9,19 @@ export class AppComponent {
   testVar: string = 'this is test string';
   testObj = {
     name: 'Rhushikesh',
-    job: 'dev'
+    job: 'QA'
   }
   title = 'app works!';
   changeString() {
     this.testVar = 'New string';
   }
   changeName() {
-    this.testObj.name = 'New name';
+    this.testObj.name = 'Rhushikesh Gopal Lokhande';
   }
   changeObg() {
     this.testObj = {
-      name: 'Vaibhav',
-      job: 'test'
+      name: 'Rhushikesh Lokhande',
+      job: 'Dev'
     }
   }
 }

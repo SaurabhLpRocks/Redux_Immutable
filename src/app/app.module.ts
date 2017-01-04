@@ -6,18 +6,21 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ChangeDetectionComponentModule } from './component/change-detection/change-detection.module';
 import { TodoComponent } from './component/todo/todo.component';
+import { TodoStore } from './common/store/todo.store';
+import { ListTodoComponent } from './component/list-todo/list-todo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    TodoComponent,
+    ListTodoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule, ChangeDetectionComponentModule
   ],
-  providers: [],
+  providers: [TodoStore],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
