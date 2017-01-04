@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ChangeDetectionComponentModule } from './component/change-detection/change-detection.module';
+import { TodoComponent } from './component/todo/todo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
