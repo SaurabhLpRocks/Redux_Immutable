@@ -36,14 +36,14 @@ To get more help on the `angular-cli` use `ng --help` or go check out the [Angul
 npm  install redux  
 npm  install immutable  
 ## folder structure 
-src__
-|-app__
-    |-common__
-        |-model__
+src   
+|-app  
+    |-common  
+        |-model  
             |-todo.model.ts
-        |-action__
+        |-action  
             |-todo.action.ts
-        |-reducer__
+        |-reducer  
             |-todo.reduder.ts
-        |-store__
+        |-store  
             |-todo.store.ts
