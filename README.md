@@ -35,3 +35,15 @@ To get more help on the `angular-cli` use `ng --help` or go check out the [Angul
 ## Install Redux and immutablejs
 npm  install redux  
 npm  install immutable  
+## folder structure 
+src__
+|-app__
+    |-common__
+        |-model__
+            |-todo.model.ts
+        |-action__
+            |-todo.action.ts
+        |-reducer__
+            |-todo.reduder.ts
+        |-store__
+            |-todo.store.ts
