@@ -38,7 +38,7 @@ npm  install immutable
 ## folder structure 
 src   
 |-app  
-    |-common  
+   |-common  
         |-model  
             |-todo.model.ts
         |-action  
