@@ -1,0 +1,9 @@
+<div class="panel panel-default panel-body" *ngIf="rules">
+    <button class="btn btn-primary" (click)="addRule()">add rule</button>
+    <button class="btn btn-primary" (click)="addGroup()">add group</button>
+    <button class="btn btn-danger" (click)="removeGroup()" *ngIf="enableRemoveGroup">remove group</button>
+    <div *ngIf="rules.groups">
+        <wts *ngFor="let group of rules.groups" [data]="group"></wts>
+    </div>
+    <rule *ngFor="let rule of rules.rules" [rule]="rule"></rule>
+</div>

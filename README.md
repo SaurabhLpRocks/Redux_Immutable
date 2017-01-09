@@ -38,12 +38,12 @@ npm  install immutable
 ## folder structure 
 src   
 |-app  
-\t|-common  
-\t\t|-model  
-            |-todo.model.ts
+--|-common  
+-----|-model  
+            |-todo.model.ts  
         |-action  
-            |-todo.action.ts
+            |-todo.action.ts  
         |-reducer  
-            |-todo.reduder.ts
+            |-todo.reduder.ts  
         |-store  
-            |-todo.store.ts
+            |-todo.store.ts  

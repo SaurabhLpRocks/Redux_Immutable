@@ -8,12 +8,16 @@ import { ChangeDetectionComponentModule } from './component/change-detection/cha
 import { TodoComponent } from './component/todo/todo.component';
 import { TodoStore } from './common/store/todo.store';
 import { ListTodoComponent } from './component/list-todo/list-todo.component';
+import { WTSComponent } from './component/wts/wts.component';
+import { RuleComponent } from './component/wts/rule/rule.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoComponent,
-    ListTodoComponent
+    ListTodoComponent,
+    WTSComponent,
+    RuleComponent
   ],
   imports: [
     BrowserModule,
