@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Rule } from '../wts.model';
+import { WtsServiceService } from '../../../wts-service.service';
 @Component({
   selector: 'rule',
   templateUrl: './rule.component.html',
@@ -12,11 +13,14 @@ export class RuleComponent implements OnInit {
   set Setrule(value) {
     this.rule = value;
   }
-  constructor() { }
+  constructor(private wtsServiceService: WtsServiceService) { }
 
   ngOnInit() {
   }
   private removeRule() {
     delete this.rule;
+  }
+  private triggerHanlder() {
+    this.wtsServiceService.triggerCallBack();
   }
 }

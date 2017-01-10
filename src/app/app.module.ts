@@ -10,7 +10,7 @@ import { TodoStore } from './common/store/todo.store';
 import { ListTodoComponent } from './component/list-todo/list-todo.component';
 import { WTSComponent } from './component/wts/wts.component';
 import { RuleComponent } from './component/wts/rule/rule.component';
-
+import { WtsServiceService } from './wts-service.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,7 @@ import { RuleComponent } from './component/wts/rule/rule.component';
     FormsModule,
     HttpModule, ChangeDetectionComponentModule
   ],
-  providers: [TodoStore],
+  providers: [TodoStore, WtsServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

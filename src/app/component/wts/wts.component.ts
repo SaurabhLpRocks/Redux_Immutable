@@ -1,5 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
 import { Group, Rule } from './wts.model';
+import { WtsServiceService } from '../../wts-service.service';
+
 @Component({
     selector: 'wts',
     templateUrl: './wts.component.html',
@@ -16,7 +18,7 @@ export class WTSComponent implements OnInit {
         }
         this.rules = value || new Group();
     };
-    constructor() {
+    constructor(private wtsServiceService: WtsServiceService) {
         this.rules = new Group();
     }
     private addGroup() {
