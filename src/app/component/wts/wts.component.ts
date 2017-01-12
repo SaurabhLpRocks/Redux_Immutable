@@ -36,3 +36,5 @@ export class WTSComponent implements OnInit {
     }
     ngOnInit() { }
 }
+
+
